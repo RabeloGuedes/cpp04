@@ -6,12 +6,12 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 08:47:23 by arabelo-          #+#    #+#             */
-/*   Updated: 2024/05/28 08:18:49 by arabelo-         ###   ########.fr       */
+/*   Updated: 2024/06/01 16:15:41 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WRONG_CAT_HPP
-# define WRONG_CAT_HPP
+#ifndef WRONGCAT_HPP
+# define WRONGCAT_HPP
 
 # include <WrongAnimal.hpp>
 

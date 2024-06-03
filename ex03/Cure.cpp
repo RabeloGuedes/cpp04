@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cure.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: arabelo- <arabelo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 17:02:31 by arabelo-          #+#    #+#             */
-/*   Updated: 2024/06/02 12:20:54 by arabelo-         ###   ########.fr       */
+/*   Updated: 2024/06/03 12:54:16 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Cure::Cure(void) {
 	type = "cure";
 }
 
-Cure::Cure(const Cure &obj): AMateria() {
+Cure::Cure(const Cure &obj) {
 	type = obj.type;
 }
 

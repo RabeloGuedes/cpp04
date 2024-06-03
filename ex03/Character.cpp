@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: arabelo- <arabelo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 17:05:34 by arabelo-          #+#    #+#             */
-/*   Updated: 2024/06/03 00:05:42 by arabelo-         ###   ########.fr       */
+/*   Updated: 2024/06/03 12:54:00 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Character::Character(void) {
 	}
 }
 
-Character::Character(const Character &obj): ICharacter() {
+Character::Character(const Character &obj) {
 	_name = obj._name;
 	_unequiped = NULL;
 	_unequipedSize = 0;
@@ -63,16 +63,6 @@ Character	&Character::operator=(const Character &obj) {
 }
 
 Character::~Character(void) {
-	// std::cout << "Slots: [ ";
-	// for (size_t i = 0; i < 4; i++) {
-	// 	std::cout << "{ " << i << ": " << _slots[i] << " },"; 
-	// }
-	// std::cout << " ]" << std::endl;
-	// std::cout << "Unequiped: [ ";
-	// for (size_t i = 0; i < _unequipedLen; i++) {
-	// 	std::cout << "{ " << i << ": " << _unequiped[i] << " },"; 
-	// }
-	// std::cout << " ]" << std::endl;
 	for (size_t i = 0; i < 4; i++) {
 		for (size_t j = i + 1; j < 4; j++) {
 			if (_slots[i] == _slots[j])

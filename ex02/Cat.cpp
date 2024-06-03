@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: arabelo- <arabelo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:37:59 by arabelo-          #+#    #+#             */
-/*   Updated: 2024/05/29 23:48:59 by arabelo-         ###   ########.fr       */
+/*   Updated: 2024/06/03 11:45:23 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ Cat::Cat(void) {
 Cat::Cat(const Cat &obj) {
 	std::cout << "Cat copy constructor called" << std::endl;
 	type = obj.type;
-	delete _b;
 	_b = new Brain(*obj._b);
 }
 

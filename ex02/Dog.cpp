@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: arabelo- <arabelo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:44:43 by arabelo-          #+#    #+#             */
-/*   Updated: 2024/05/29 23:48:12 by arabelo-         ###   ########.fr       */
+/*   Updated: 2024/06/03 11:45:30 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ Dog::Dog(void) {
 Dog::Dog(const Dog &obj) {
 	type = obj.type;
 	std::cout << "Dog copy constructor called" << std::endl;
-	delete _b;
 	_b = new Brain(*obj._b);
 }
 

@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: arabelo- <arabelo-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 13:48:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2024/05/31 08:13:40 by arabelo-         ###   ########.fr       */
+/*   Updated: 2024/06/03 11:53:04 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <Cat.hpp>
 #include <Dog.hpp>
+#include <sstream>
 
 int	main(void) {
 	{
@@ -27,8 +28,12 @@ int	main(void) {
 
 		for (size_t i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
 			std::cout << &arr[i] << std::endl;
+			std::stringstream	s;
+			s << i;
 			for (size_t j = 0; j < 100; j++) {
-				arr[i]->setIdea(std::to_string(i) + ": " + "idea " + std::to_string(j));
+				std::stringstream	r;
+				r << j;
+				arr[i]->setIdea(s.str() + ": " + "idea " + r.str());
 			}
 		}
 
@@ -43,9 +48,12 @@ int	main(void) {
 		}
 	}
 	{
+		std::cout << std::endl << std::endl;
 		Cat	*a = new Cat;
 		for (size_t j = 0; j < 100; j++) {
-			a->setIdea("idea " + std::to_string(j));
+			std::stringstream	s;
+			s << j;
+			a->setIdea("idea " + s.str());
 		}
 
 		a->showIdeas();
